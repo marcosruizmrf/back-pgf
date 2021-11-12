@@ -26,6 +26,7 @@ public class Todo implements Serializable {
 	private Date dataParaFinalizar;
 	private Boolean finalizado = false;
 	
+	
 	public Todo() {
 	}
 
@@ -33,9 +34,10 @@ public class Todo implements Serializable {
 		this.id = id;
 		this.titulo = titulo;
 		this.descricao = descricao;
-		this.setOrdem(ordem);
+		this.ordem = ordem;
 		this.dataParaFinalizar = dataParaFinalizar;
 		this.finalizado = finalizado;
+	
 	}
 
 	public Integer getId() {
@@ -110,5 +112,7 @@ public class Todo implements Serializable {
 			return false;
 		return true;
 	}
+
+	
 
 }
