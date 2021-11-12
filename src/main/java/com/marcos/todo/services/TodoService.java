@@ -51,6 +51,7 @@ public class TodoService {
 		newObj.setTitulo(obj.getTitulo());
 		newObj.setDataParaFinalizar(obj.getDataParaFinalizar());
 		newObj.setDescricao(obj.getDescricao());
+		newObj.setOrdem(obj.getOrdem());
 		newObj.setFinalizado(obj.getFinalizado());
 		return repository.save(newObj);
 	}

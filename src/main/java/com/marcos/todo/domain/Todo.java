@@ -20,6 +20,7 @@ public class Todo implements Serializable {
 	private Integer id;
 	private String titulo;
 	private String descricao;
+	private String ordem;
 	
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	private Date dataParaFinalizar;
@@ -28,10 +29,11 @@ public class Todo implements Serializable {
 	public Todo() {
 	}
 
-	public Todo(Integer id, String titulo, String descricao, Date dataParaFinalizar, Boolean finalizado) {
+	public Todo(Integer id, String titulo, String descricao, String ordem, Date dataParaFinalizar, Boolean finalizado) {
 		this.id = id;
 		this.titulo = titulo;
 		this.descricao = descricao;
+		this.setOrdem(ordem);
 		this.dataParaFinalizar = dataParaFinalizar;
 		this.finalizado = finalizado;
 	}
@@ -58,6 +60,14 @@ public class Todo implements Serializable {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+	
+	public String getOrdem() {
+		return ordem;
+	}
+
+	public void setOrdem(String ordem) {
+		this.ordem = ordem;
 	}
 
 	public Date getDataParaFinalizar() {
@@ -100,4 +110,5 @@ public class Todo implements Serializable {
 			return false;
 		return true;
 	}
+
 }
