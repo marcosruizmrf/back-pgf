@@ -3,7 +3,7 @@
 
 Projeto Integrador em Computação I - 2021
 
-📚 Projeto PGF:
+📚 Projeto PGF (Planejamento e Gestão de Ferramentaria):
 
 Polo: Diadema
 
